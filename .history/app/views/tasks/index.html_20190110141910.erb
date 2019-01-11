@@ -1,0 +1,19 @@
+<%= stylesheet_link_tag "css/todo", :media => "all" %>
+<h1 class="Center">Your Tasks</h1>
+<table class="Main">
+    <thead> 
+        <tr>
+            <th>Task Name</th>
+        </tr>
+    </thead>
+    <tbody class="Center">
+        <% @tasks.each do |task| %>
+            <tr>
+                <td><%= task.title %></td>
+                <td><%= link_to 'edit', edit_task_path(task) %></td>
+                <td><%= link_to 'delete', task_path(task), method: :delete %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
+<%= link_to 'Add', new_task_path %>

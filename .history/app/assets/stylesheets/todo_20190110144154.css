@@ -1,0 +1,20 @@
+body{
+    background-image: url("todo.jpg");
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto；
+}
+
+.Center{
+    text-align: center;
+}
+
+.Main{
+    display: flex;
+    justify-content: center;
+}
+
+
+.This {
+    border: 2px gray solid;
+    }

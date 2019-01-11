@@ -1,0 +1,12 @@
+<%= stylesheet_link_tag "css/todo", :media => "all" %>
+<h1 class="Center">Edit tasks</h1>
+<div class="Main">
+<%= form_for(@task) do |f|%>
+    <div><%= f.label :title %></div>
+    <div><%= f.text_field :title %></div>
+    <div><%= f.submit %></div>
+<% end %>
+<%= link_to 'Back', tasks_path %>
+</div>
+
+
